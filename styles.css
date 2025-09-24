@@ -1,0 +1,167 @@
+:root {
+    --background-image: url("Bild_für_Anmeldeformular.jpg");
+    --background-gadient: linear-gradient(0.25turn, #9929ea, #7508fb);
+    --font-color-white: white;
+    --font-color-grey: rgb(208, 208, 208);
+    --font-color-black: rgb(0, 0, 0);
+    --button-color-white: rgb(255, 255, 255);
+    --button-color-grey: rgb(226, 226, 226);
+    --formular-container-color: rgb(21, 21, 23);
+}
+
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    background-color: var(--formular-container-color);
+    position: fixed;
+    font-weight: bolder;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+header>h1{
+    color: var(--font-color-white);
+    font-size: 20px;
+    font-weight: 00;
+    margin: 0px 0px 0px 10%;
+    line-height: 50px;
+}
+
+.header_links{
+    margin: 10px 10% 0px 0px;
+}
+
+header>div>a{
+    color: var(--font-color-grey);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+header>div>a:hover{
+    color: var(--font-color-white);
+    cursor: pointer;
+}
+
+.bild{
+    width: 30%;
+    height: 100%;
+    overflow: hidden;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: 2;
+}
+
+.bild_platzhalter{
+    width: 30%;
+}
+
+.inhalt{
+    width: 70%;
+    height: 100vh;
+    background: var(--background-gadient);
+}
+
+.inhalt>p:first-child{
+    color: var(--font-color-white);
+    font-weight: 500;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    margin: 130px 10% 0 10%;
+}
+
+.inhalt>p{
+    color: var(--font-color-white);
+    font-weight: 700;
+    margin: 25px 10% 0 10%;
+}
+
+.container_formular{
+    background-color: var(--formular-container-color);
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.container_formular>p{
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 20px;
+    margin-left: 10%;
+    color: var(--font-color-white);
+}
+
+.container_formular>form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--font-color-white);
+}   
+
+.container_formular>form label{
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.container_formular>form input{
+    margin-top: 10px;
+    padding-left: 10px;
+    width: 90%;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.container_formular>form input:invalid{
+    background-image: url("RoterkreisMitAusrufezeichen.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: 98%;
+}
+
+.spalte_rechts_formular, .spalte_links_formular{
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
+}
+
+button{
+    margin: 50px 0px 0px 10%;
+    padding: 5px 10px 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--button-color-white);
+    font-style: italic;
+    font-weight: bold;
+    color: var(--font-color-black);
+}
+
+button:hover{
+    background-color: var(--button-color-grey);
+    background-image: url("schneller-vorlauf.png");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 95%;
+    padding-right: 33px;
+}
+
+button:active{
+    transform: scale(0.98);
+    transition: transform 0.1s;
+}

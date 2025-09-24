@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anmelden</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    
+    <header>
+        <h1>ArtHub</h1>
+        <div class="header_links">
+            <a href="https://www.google.com/?hl=de&zx=1758274133159&no_sw_cr=1" target="_blank">Link Eins</a>
+            <a href="https://www.google.com/?hl=de&zx=1758274133159&no_sw_cr=1" target="_blank">Link Zwei</a>
+            <a href="https://www.google.com/?hl=de&zx=1758274133159&no_sw_cr=1" target="_blank">Link Drei</a>
+        </div>
+    </header>
+
+    <div class="bild"></div>
+    <div class="bild_platzhalter"></div>
+    <div class="inhalt">
+        <p>Du weißt, dass du einen Ort brauchst, um deine Kunst zu zeigen, 
+            dich inspirieren zu lassen und dich mit anderen Kreativen zu verbinden.
+            Melde dich <b>jetzt</b> an und werde Teil unseres 
+            <u><b><a href="https://www.google.com/?hl=de&zx=1758274133159&no_sw_cr=1" style="color: white;" target="_blank">Arthubs</a></b></u>.</p>
+
+        <p>Du weißt, dass du willst.</p>
+
+        <div class="container_formular">
+            <p>Jetzt Anmelden!</p>
+            <form action="angemeldet.html" method="get" id="anmeldeFormular">
+                
+                <div class="spalte_links_formular">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required maxlength="30">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required maxlength="30">
+
+                    <label for="passwort">Passwort</label>
+                    <input type="password" id="passwort" name="passwort" required minlength="8" maxlength="30">
+                </div>
+
+                <div class="spalte_rechts_formular">
+                    <label for="nachname">Nachname</label>
+                    <input type="text" id="nachname" name="nachname" required maxlength="30">
+
+                    <label for="telefonnummer">Telefonnummer</label>
+                    <input type="text" id="telefonnummer" name="telefonnummer" required maxlength="30" pattern="[0-9]+">
+
+                    <label for="passwort_bestätigen">Passwort Bestätigen</label>
+                    <input type="password" id="passwort_bestätigen" name="passwort_bestätigen" required minlength="8" maxlength="30">
+                </div>
+                
+            </form>
+        </div>
+        <button type="submit" form="anmeldeFormular">Los Geht's</button> 
+    </div>
+</body>
+</html>
